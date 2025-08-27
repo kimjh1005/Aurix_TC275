@@ -1,0 +1,843 @@
+!SESSION 2025-08-27 10:11:52.831 -----------------------------------------------
+eclipse.buildId=1.10.16
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -perspective com.infineon.aurix.buildmanager.perspective.c
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective com.infineon.aurix.buildmanager.perspective.c
+
+!ENTRY org.eclipse.ui 2 0 2025-08-27 10:18:19.538
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-27 10:18:19.538
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-27 10:18:19.722
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-27 10:18:19.722
+!MESSAGE Commands should really have a category: plug-in='com.infineon.aurix.buildsystem.debug', id='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand', categoryId='com.infineon.aurix.buildsystem.debug.debugActiveProjectCommand'
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2025-08-27 10:18:23.231
+!MESSAGE ConnectException
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at com.infineon.aurix.buildsystem.IFXNetworkUtils$1.run(IFXNetworkUtils.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.sendHeadersAsync(Http1Exchange.java:239)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$9(Exchange.java:472)
+	at java.net.http/jdk.internal.net.http.Exchange.checkFor407(Exchange.java:404)
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$10(Exchange.java:476)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:476)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:157)
+	at java.base/java.util.concurrent.CompletableFuture.completeAsync(CompletableFuture.java:2673)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsync(MultiExchange.java:294)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.sendAsync(HttpClientImpl.java:654)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:552)
+	... 3 more
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 29 more
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 2 0 2025-08-27 10:18:23.259
+!MESSAGE Unable to initialize Analytics Service.
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 4 0 2025-08-27 10:18:23.260
+!MESSAGE java.net.MalformedURLException: no protocol: 
+!STACK 0
+java.lang.IllegalArgumentException: java.net.MalformedURLException: no protocol: 
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:679)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:125)
+	at com.google.api.client.http.GenericUrl.<init>(GenericUrl.java:108)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.<init>(AnalyticsService.java:69)
+	at com.infineon.aurix.buildsystem.analytics.AnalyticsService.getInstance(AnalyticsService.java:98)
+	at com.infineon.aurix.buildsystem.AnalyticsUtils.send(AnalyticsUtils.java:24)
+	at com.infineon.aurix.buildsystem.Analytics.sendToolStarted(Analytics.java:6)
+	at com.infineon.aurix.buildsystem.AurixIDEStartup.earlyStartup(AurixIDEStartup.java:25)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2699)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.MalformedURLException: no protocol: 
+	at java.base/java.net.URL.<init>(URL.java:674)
+	at java.base/java.net.URL.<init>(URL.java:569)
+	at java.base/java.net.URL.<init>(URL.java:516)
+	at com.google.api.client.http.GenericUrl.parseURL(GenericUrl.java:677)
+	... 12 more
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 10:18:23.371
+!MESSAGE Cannot open remote device description from URL https://itools.infineon.com/aurix_ide/ADS/com.infineon.aurix.buildsystem/1.10.16/tc4-hardware.json. Resource does not exist
+
+!ENTRY com.infineon.aurix.buildsystem 4 0 2025-08-27 10:18:23.372
+!MESSAGE C:\Users\User\ADSDocuments\1.10.16\tc4-hardware.json (지정된 파일을 찾을 수 없습니다)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\User\ADSDocuments\1.10.16\tc4-hardware.json (지정된 파일을 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:134)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:122)
+	at com.google.common.io.ByteSource.openBufferedStream(ByteSource.java:120)
+	at com.infineon.aurix.buildsystem.configuration.contributor.CachedURLHardwareContainerConnector.getHardwareContainerJsonInputStream(CachedURLHardwareContainerConnector.java:60)
+	at com.infineon.aurix.buildsystem.configuration.contributor.AbstractSupportedHardwareContributor.getSupportedHardwareContribution(AbstractSupportedHardwareContributor.java:29)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.lambda$40(SupportedHardwareManager.java:367)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getSupportedHardwareContributions(SupportedHardwareManager.java:374)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.parseConfig(SupportedHardwareManager.java:76)
+	at com.infineon.aurix.buildsystem.configuration.SupportedHardwareManager.getInstance(SupportedHardwareManager.java:65)
+	at com.infineon.aurix.buildsystem.AurixIDEStartup.earlyStartup(AurixIDEStartup.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2699)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 2 0 2025-08-27 10:18:25.694
+!MESSAGE Analytics Service can't be started because No analytics endpoint is configured
+
+!ENTRY com.infineon.aurix.buildsystem.analytics 1 0 2025-08-27 10:18:25.694
+!MESSAGE Analytics service enabled
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2025-08-27 13:02:00.908
+!MESSAGE Using remote for artifact: project-initializer:tricore-tc2xx
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-27 13:02:59.580
+!MESSAGE Indexed 'TC275_Project' (164 sources, 642 headers) in 16.2 sec: 135,335 declarations; 206,715 references; 12 unresolved inclusions; 13,481 syntax errors; 2,681 unresolved names (0.78%)
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2025-08-27 13:03:49.821
+!MESSAGE Using local cache for artifact: project-initializer:tricore-tc2xx
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-27 13:04:06.246
+!MESSAGE Indexed 'TC275-LED' (164 sources, 642 headers) in 12.7 sec: 135,335 declarations; 206,715 references; 12 unresolved inclusions; 13,481 syntax errors; 2,681 unresolved names (0.78%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:04:13.688
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 878 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:04:13.726
+!MESSAGE Include paths were discovered in 35 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:05:52.569
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 222 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:05:52.599
+!MESSAGE Include paths were discovered in 28 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:10:16.840
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:10:16.841
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:10:16.871
+!MESSAGE Include paths were discovered in 29 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:19:30.248
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 859 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:19:30.273
+!MESSAGE Include paths were discovered in 24 milliseconds.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:24:08.420
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:25:01.164
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:25:22.214
+!MESSAGE Debug session for this launch configuration is already running.
+
+Please stop the current launch to start a new one.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:25:33.099
+!MESSAGE Debug session for this launch configuration is already running.
+
+Please stop the current launch to start a new one.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:27:25.161
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 136 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:27:25.189
+!MESSAGE Include paths were discovered in 28 milliseconds.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:31:22.819
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:31:25.582
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-08-27 13:31:58.418
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.DataRequestMonitor@25c6f286): Status CANCEL: si.isystem.eclipse.debug code=0 Cancelling command ISysCmdMiscUpdateCpuStatus[ISysDebuggerDmContext(2, TC275-LED.elf)]()
+' resulted in a cancel status: Status CANCEL: si.isystem.eclipse.debug code=0 Cancelling command ISysCmdMiscUpdateCpuStatus[ISysDebuggerDmContext(2, TC275-LED.elf)]()
+, even though the request is not set to cancel.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:39:22.275
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 877 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:39:22.297
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:40:08.562
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 835 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:40:08.582
+!MESSAGE Include paths were discovered in 19 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:40:45.399
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 166 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:40:45.420
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-27 13:45:22.665
+!MESSAGE Target not available.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:45:39.469
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:46:16.312
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:46:27.448
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:46:42.720
+!MESSAGE Debug session for this launch configuration is already running.
+
+Please stop the current launch to start a new one.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 13:49:43.664
+!MESSAGE Debug session for this launch configuration is already running.
+
+Please stop the current launch to start a new one.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-27 13:49:45.477
+!MESSAGE Target not available.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:49:50.778
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 860 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 13:49:50.800
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-27 14:05:06.140
+!MESSAGE Target not available.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:05:28.868
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 897 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:05:28.890
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 14:05:35.525
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:05:51.663
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 818 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:05:51.682
+!MESSAGE Include paths were discovered in 18 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:06:00.746
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 164 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:06:00.767
+!MESSAGE Include paths were discovered in 19 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:08:31.305
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 868 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:08:31.324
+!MESSAGE Include paths were discovered in 18 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:08:38.377
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 151 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:08:38.397
+!MESSAGE Include paths were discovered in 18 milliseconds.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 14:08:49.840
+!MESSAGE Invalid frame level (0) in respect to frame count 0
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:10:56.554
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 1141 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:10:56.577
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 14:10:59.599
+!MESSAGE Debug session for this launch configuration is already running.
+
+Please stop the current launch to start a new one.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:11:05.641
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 154 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:11:05.664
+!MESSAGE Include paths were discovered in 22 milliseconds.
+
+!ENTRY si.isystem.eclipse.debug 4 0 2025-08-27 14:11:45.063
+!MESSAGE Debug session for this launch configuration is already running.
+
+Please stop the current launch to start a new one.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:11:50.977
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 868 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:11:51.001
+!MESSAGE Include paths were discovered in 22 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:12:36.662
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 842 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:12:36.684
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:12:55.135
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 185 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:12:55.158
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-27 14:13:10.782
+!MESSAGE Target not available.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:14:02.374
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 874 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:14:02.397
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:14:05.339
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 149 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:14:05.364
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:16:36.135
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 884 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:16:36.157
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:16:43.121
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 147 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:16:43.143
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY org.eclipse.cdt.dsf 4 -1 2025-08-27 14:16:45.148
+!MESSAGE Uncaught exception in DSF executor thread
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "si.isystem.debug.core.proxy.SessionControllerProxy.getPrimaryClusterCores()" because "this.m_sessionController" is null
+	at si.isystem.debug.core.proxy.IConnectProxy.disconnectAndCloseWinIdea(Unknown Source)
+	at si.isystem.debug.core.proxy.ISysSessionManager.debugSessionStop(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.closeWinIDEA(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.doInitialize(Unknown Source)
+	at si.isystem.dsf.ISysAbstractDsfService.initialize(Unknown Source)
+	at si.isystem.dsf.launch.ISysServiceInitializationSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:380)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+!ENTRY winIDEA 4 4 2025-08-27 14:16:45.148
+!MESSAGE Launch failed.
+!STACK 1
+org.eclipse.debug.core.DebugException: TASKING winIDEA services initialization failed.
+	at si.isystem.dsf.launch.ISysLaunchDelegate.initializeServices(Unknown Source)
+	at si.isystem.dsf.launch.ISysLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.ExecutionException: org.eclipse.core.runtime.CoreException: Unhandled exception when executing Sequence si.isystem.dsf.launch.ISysServiceInitializationSequence@1646dec6, step #0
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	... 7 more
+Caused by: org.eclipse.core.runtime.CoreException: Unhandled exception when executing Sequence si.isystem.dsf.launch.ISysServiceInitializationSequence@1646dec6, step #0
+	... 8 more
+Caused by: java.lang.NullPointerException: Cannot invoke "si.isystem.debug.core.proxy.SessionControllerProxy.getPrimaryClusterCores()" because "this.m_sessionController" is null
+	at si.isystem.debug.core.proxy.IConnectProxy.disconnectAndCloseWinIdea(Unknown Source)
+	at si.isystem.debug.core.proxy.ISysSessionManager.debugSessionStop(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.closeWinIDEA(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.doInitialize(Unknown Source)
+	at si.isystem.dsf.ISysAbstractDsfService.initialize(Unknown Source)
+	at si.isystem.dsf.launch.ISysServiceInitializationSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:380)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+!SUBENTRY 1 si.isystem.eclipse.debug 4 0 2025-08-27 14:16:45.149
+!MESSAGE TASKING winIDEA services initialization failed.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.core.runtime.CoreException: Unhandled exception when executing Sequence si.isystem.dsf.launch.ISysServiceInitializationSequence@1646dec6, step #0
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at si.isystem.dsf.launch.ISysLaunchDelegate.initializeServices(Unknown Source)
+	at si.isystem.dsf.launch.ISysLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Unhandled exception when executing Sequence si.isystem.dsf.launch.ISysServiceInitializationSequence@1646dec6, step #0
+	... 8 more
+Caused by: java.lang.NullPointerException: Cannot invoke "si.isystem.debug.core.proxy.SessionControllerProxy.getPrimaryClusterCores()" because "this.m_sessionController" is null
+	at si.isystem.debug.core.proxy.IConnectProxy.disconnectAndCloseWinIdea(Unknown Source)
+	at si.isystem.debug.core.proxy.ISysSessionManager.debugSessionStop(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.closeWinIDEA(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.doInitialize(Unknown Source)
+	at si.isystem.dsf.ISysAbstractDsfService.initialize(Unknown Source)
+	at si.isystem.dsf.launch.ISysServiceInitializationSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:380)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+!ENTRY winIDEA 4 4 2025-08-27 14:16:45.149
+!MESSAGE ***  4058549.8242  ***  ISysConnectionService initialization(sub) failed: 'Failed to initialize connection service.'!
+!STACK 0
+si.isystem.exceptions.SException: Please set the C++ Application in the Main tab of the debug configuration dialog.
+	at si.isystem.debug.core.winidea.IConLaunchManager.checkOutputFileExistence(Unknown Source)
+	at si.isystem.debug.core.proxy.ISysSessionManager.openWinIdeaWithWorkspaceAndConnect(Unknown Source)
+	at si.isystem.debug.core.winidea.IConLaunchManager.startDebugSession(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.startWinIdeaDebugSession(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.startWinIdeaDebugSessionWithProgressDialog(Unknown Source)
+	at si.isystem.dsf.services.ISysConnectionService.doInitialize(Unknown Source)
+	at si.isystem.dsf.ISysAbstractDsfService.initialize(Unknown Source)
+	at si.isystem.dsf.launch.ISysServiceInitializationSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:380)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:17:30.781
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 834 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:17:30.803
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:19:33.921
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 910 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:19:33.948
+!MESSAGE Include paths were discovered in 24 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:21:34.042
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 878 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:21:34.068
+!MESSAGE Include paths were discovered in 22 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:21:53.263
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 860 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:21:53.286
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:21:56.502
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED boosted in 146 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:21:56.525
+!MESSAGE Include paths were discovered in 22 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2025-08-27 14:26:26.042
+!MESSAGE Using local cache for artifact: project-initializer:tricore-tc2xx
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-27 14:26:41.977
+!MESSAGE Indexed 'TC275-LED-BUTTON' (164 sources, 642 headers) in 12.1 sec: 135,335 declarations; 206,715 references; 12 unresolved inclusions; 13,481 syntax errors; 2,681 unresolved names (0.78%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:26:49.264
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED-BUTTON boosted in 787 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:26:49.296
+!MESSAGE Include paths were discovered in 30 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:32:02.705
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED-BUTTON boosted in 847 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:32:02.727
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:32:35.969
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED-BUTTON boosted in 965 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:32:35.990
+!MESSAGE Include paths were discovered in 19 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:34:06.963
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED-BUTTON boosted in 887 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:34:06.985
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:34:28.278
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED-BUTTON boosted in 890 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:34:28.299
+!MESSAGE Include paths were discovered in 19 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem.debug 4 0 2025-08-27 14:34:42.685
+!MESSAGE Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:438)
+	at org.eclipse.cdt.debug.core.CDebugUtils.getProjectName(CDebugUtils.java:619)
+	at org.eclipse.cdt.debug.core.CDebugUtils.getCProject(CDebugUtils.java:600)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.isLaunchConfigurationForActiveBuildConfiguration(DebugLaunchUtils.java:152)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.lambda$0(DebugLaunchUtils.java:74)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.tryAdvance(HashMap.java:1728)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.getDefaultLaunchConfigurationForActiveBuildConfig(DebugLaunchUtils.java:75)
+	at com.infineon.aurix.buildsystem.debug.commandHandler.DebugActiveProjectCommandHandler.execute(DebugActiveProjectCommandHandler.java:34)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor76.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-08-27 14:34:42.685
+!MESSAGE Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:34:46.728
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project TC275-LED-BUTTON boosted in 148 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 14:34:46.750
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem.remote-repo 1 0 2025-08-27 14:44:19.887
+!MESSAGE Using local cache for artifact: project-initializer:tricore-tc2xx
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-27 14:44:35.781
+!MESSAGE Indexed 'IO_Port_Test1' (164 sources, 642 headers) in 12.2 sec: 135,335 declarations; 206,715 references; 12 unresolved inclusions; 13,481 syntax errors; 2,681 unresolved names (0.78%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:42:45.543
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 841 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:42:45.566
+!MESSAGE Include paths were discovered in 22 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:43:17.557
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 849 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:43:17.580
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:57:51.973
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:57:51.973
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 15:57:51.999
+!MESSAGE Include paths were discovered in 25 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:04:38.533
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 912 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:04:38.555
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:05:02.224
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 893 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:05:02.251
+!MESSAGE Include paths were discovered in 25 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:09:15.478
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 890 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:09:15.498
+!MESSAGE Include paths were discovered in 19 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:09:46.366
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 891 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:09:46.388
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem.debug 4 0 2025-08-27 16:09:51.861
+!MESSAGE Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:438)
+	at org.eclipse.cdt.debug.core.CDebugUtils.getProjectName(CDebugUtils.java:619)
+	at org.eclipse.cdt.debug.core.CDebugUtils.getCProject(CDebugUtils.java:600)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.isLaunchConfigurationForActiveBuildConfiguration(DebugLaunchUtils.java:152)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.lambda$0(DebugLaunchUtils.java:74)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.tryAdvance(HashMap.java:1728)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.getDefaultLaunchConfigurationForActiveBuildConfig(DebugLaunchUtils.java:75)
+	at com.infineon.aurix.buildsystem.debug.commandHandler.DebugActiveProjectCommandHandler.execute(DebugActiveProjectCommandHandler.java:34)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor76.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-08-27 16:09:51.861
+!MESSAGE Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:09:55.527
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 145 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:09:55.548
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:10:58.986
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 887 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:10:59.008
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem.debug 4 0 2025-08-27 16:11:45.989
+!MESSAGE Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:438)
+	at org.eclipse.cdt.debug.core.CDebugUtils.getProjectName(CDebugUtils.java:619)
+	at org.eclipse.cdt.debug.core.CDebugUtils.getCProject(CDebugUtils.java:600)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.isLaunchConfigurationForActiveBuildConfiguration(DebugLaunchUtils.java:152)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.lambda$0(DebugLaunchUtils.java:74)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.tryAdvance(HashMap.java:1728)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at com.infineon.aurix.buildsystem.debug.DebugLaunchUtils.getDefaultLaunchConfigurationForActiveBuildConfig(DebugLaunchUtils.java:75)
+	at com.infineon.aurix.buildsystem.debug.commandHandler.DebugActiveProjectCommandHandler.execute(DebugActiveProjectCommandHandler.java:34)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor76.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-08-27 16:11:45.990
+!MESSAGE Launch configuration TC275-LED TriCore Debug (TASKING) at file:/D:/Project/Aurix-TC275/TC275-LED/TC275-LED%20TriCore%20Debug%20(TASKING).launch does not exist.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:11:46.144
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 147 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:11:46.166
+!MESSAGE Include paths were discovered in 21 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:14:15.784
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 902 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:14:15.806
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:15:22.640
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 932 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:15:22.661
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:15:34.661
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 146 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:15:34.686
+!MESSAGE Include paths were discovered in 25 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:20:19.022
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 155 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:20:19.043
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:36:40.709
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 907 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:36:40.730
+!MESSAGE Include paths were discovered in 20 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:37:07.667
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project IO_Port_Test1 boosted in 884 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2025-08-27 16:37:07.690
+!MESSAGE Include paths were discovered in 21 milliseconds.

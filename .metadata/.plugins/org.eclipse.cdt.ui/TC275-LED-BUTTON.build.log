@@ -1,0 +1,18 @@
+14:34:46 **** Incremental Build of configuration TriCore Debug (TASKING) for project TC275-LED-BUTTON ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: TC275-LED-BUTTON.elf
+Invoking: TASKING Linker
+cctc -f .TC275-LED-BUTTON.elf.opt
+Finished building target: TC275-LED-BUTTON.elf
+ 
+Invoking: Print Size
+elfsize  "TC275-LED-BUTTON.elf"
+Total sizes:
+ROM: 0x21b3 (8627) = code: 0x200e (8206) + romdata: 0x1a5 (421)
+RAM: 0x9519 (38169) = data + bss
+Finished building: TC275-LED-BUTTON.siz
+ 
+
+14:34:47 Build Finished. 0 errors, 0 warnings. (took 570ms)
+
