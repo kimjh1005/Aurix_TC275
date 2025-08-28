@@ -1,0 +1,22 @@
+16:13:23 **** Incremental Build of configuration TriCore Debug (TASKING) for project UART_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/UART_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
+cctc -cs --dep-file="Cpu1_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/UART_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu1_Main.src" "../Cpu1_Main.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu1_Main.o" "Cpu1_Main.src"
+Building target: UART_Test1.elf
+Invoking: TASKING Linker
+cctc -f .UART_Test1.elf.opt
+Finished building target: UART_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "UART_Test1.elf"
+Total sizes:
+ROM: 0x3ce9 (15593) = code: 0x39fa (14842) + romdata: 0x2ef (751)
+RAM: 0x9733 (38707) = data + bss
+Finished building: UART_Test1.siz
+ 
+
+16:13:24 Build Finished. 0 errors, 0 warnings. (took 822ms)
+
