@@ -65,6 +65,6 @@ void core0_main(void)
         //r_buff_cnt = received_buff_count();
         //send_command(2);
         blinkLED_cnt(cnt_led);
-        waitTime(IfxStm_getTicksFromMilliseconds(BSP_DEFAULT_TIMER, 1000));
+        waitTime(IfxStm_getTicksFromMilliseconds(BSP_DEFAULT_TIMER, 1000));`
     }
 }

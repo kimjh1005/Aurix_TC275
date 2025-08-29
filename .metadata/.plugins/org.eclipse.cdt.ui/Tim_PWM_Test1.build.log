@@ -1,0 +1,18 @@
+16:43:13 **** Incremental Build of configuration TriCore Debug (TASKING) for project Tim_PWM_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: Tim_PWM_Test1.elf
+Invoking: TASKING Linker
+cctc -f .Tim_PWM_Test1.elf.opt
+Finished building target: Tim_PWM_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "Tim_PWM_Test1.elf"
+Total sizes:
+ROM: 0x2433 (9267) = code: 0x228a (8842) + romdata: 0x1a9 (425)
+RAM: 0x9521 (38177) = data + bss
+Finished building: Tim_PWM_Test1.siz
+ 
+
+16:43:14 Build Finished. 0 errors, 0 warnings. (took 575ms)
+
